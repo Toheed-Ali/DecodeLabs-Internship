@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs - The Toolkit &amp; Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app-shell has-sidebar organic-bg" data-page="toolkit">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="ambient grid-bg-sm" aria-hidden="true"></div>
+
+  <header class="top-nav">
+    <div class="top-nav__brand">DecodeLabs</div>
+    <div class="top-nav__actions">
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <button class="icon-btn" type="button" aria-label="Account">
+        <span class="material-symbols-outlined">account_circle</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-label="Mobile">
+    <a class="sidebar__link" href="index.html" data-nav="intro">
+      <span class="material-symbols-outlined">door_open</span>
+      Intro
+    </a>
+    <a class="sidebar__link" href="guidelines.html" data-nav="criteria">
+      <span class="material-symbols-outlined">rule</span>
+      Criteria
+    </a>
+    <a class="sidebar__link" href="architecture.html" data-nav="architecture">
+      <span class="material-symbols-outlined">architecture</span>
+      Architecture
+    </a>
+    <a class="sidebar__link" href="toolkit.html" data-nav="toolkit">
+      <span class="material-symbols-outlined filled">handyman</span>
+      Toolkit
+    </a>
+    <a class="sidebar__link" href="aesthetics.html" data-nav="aesthetics">
+      <span class="material-symbols-outlined">palette</span>
+      Aesthetics
+    </a>
+    <a class="sidebar__link" href="framework.html" data-nav="roadmap">
+      <span class="material-symbols-outlined">map</span>
+      Roadmap
+    </a>
+    <a class="sidebar__link" href="conclusion.html" data-nav="conclusion">
+      <span class="material-symbols-outlined">flag</span>
+      Conclusion
+    </a>
+  </nav>
+
+  <aside class="sidebar" aria-label="Section navigation">
+    <div class="sidebar__header">
+      <div class="sidebar__title">Project 1</div>
+      <div class="sidebar__subtitle">Responsive Layout</div>
+    </div>
+    <nav class="sidebar__nav">
+      <a class="sidebar__link" href="index.html" data-nav="intro"><span class="material-symbols-outlined">door_open</span> Intro</a>
+      <a class="sidebar__link" href="guidelines.html" data-nav="criteria"><span class="material-symbols-outlined">rule</span> Criteria</a>
+      <a class="sidebar__link" href="architecture.html" data-nav="architecture"><span class="material-symbols-outlined">architecture</span> Architecture</a>
+      <a class="sidebar__link" href="toolkit.html" data-nav="toolkit"><span class="material-symbols-outlined filled">handyman</span> Toolkit</a>
+      <a class="sidebar__link" href="aesthetics.html" data-nav="aesthetics"><span class="material-symbols-outlined">palette</span> Aesthetics</a>
+      <a class="sidebar__link" href="framework.html" data-nav="roadmap"><span class="material-symbols-outlined">map</span> Roadmap</a>
+      <a class="sidebar__link" href="conclusion.html" data-nav="conclusion"><span class="material-symbols-outlined">flag</span> Conclusion</a>
+    </nav>
+  </aside>
+
+  <main id="main-content" class="main-canvas">
+    <section class="section">
+      <header style="margin-bottom:var(--stack-lg);">
+        <h1 class="text-display" style="margin-bottom:8px;">The Toolkit: Your Raw Materials</h1>
+        <p class="text-body-lg text-muted" style="max-width:32rem;">Mastering the elemental building blocks before layering complexities.</p>
+      </header>
+
+      <div class="bento-grid bento-grid--3">
+        <article class="tool-card glass-panel">
+          <div class="tool-card__icon tool-card__icon--html"><span class="material-symbols-outlined">domain</span></div>
+          <h2 class="text-headline-md">HTML5</h2>
+          <hr style="border:none;border-top:1px solid rgba(193,200,196,0.3);margin:var(--stack-sm) 0;">
+          <p class="text-body-md text-muted"><strong style="color:var(--on-surface);">Infrastructure.</strong> Semantic landmarks and structural meaning. Not just divs, but the right element for the right job.</p>
+        </article>
+        <article class="tool-card glass-panel">
+          <div class="tool-card__icon tool-card__icon--css"><span class="material-symbols-outlined">brush</span></div>
+          <h2 class="text-headline-md">CSS3</h2>
+          <hr style="border:none;border-top:1px solid rgba(193,200,196,0.3);margin:var(--stack-sm) 0;">
+          <p class="text-body-md text-muted"><strong style="color:var(--on-surface);">Skin.</strong> Responsive styling using Grid, Flexbox, and Container Queries.</p>
+        </article>
+        <article class="tool-card glass-panel">
+          <div class="tool-card__icon tool-card__icon--js"><span class="material-symbols-outlined">settings_applications</span></div>
+          <h2 class="text-headline-md">JavaScript</h2>
+          <hr style="border:none;border-top:1px solid rgba(193,200,196,0.3);margin:var(--stack-sm) 0;">
+          <p class="text-body-md text-muted"><strong style="color:var(--on-surface);">Logic.</strong> Basic state management and interactive functionality.</p>
+        </article>
+      </div>
+
+      <div style="display:flex;justify-content:center;margin-top:var(--stack-md);">
+        <div class="mandate-badge">
+          <span class="material-symbols-outlined" style="font-size:2rem;color:var(--secondary);">verified</span>
+          <div>
+            <div class="mandate-badge__label">The Mandate</div>
+            <div class="text-headline-md">No Frameworks. Master the fundamentals first.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:var(--section-padding);border-top:1px solid rgba(193,200,196,0.2);">
+      <header style="text-align:center;margin-bottom:var(--stack-md);">
+        <h2 class="text-display">Pillar 1: Strategy &amp; The Blueprint</h2>
+      </header>
+
+      <div class="bento-grid bento-grid--2">
+        <div style="display:flex;flex-direction:column;gap:var(--stack-lg);">
+          <article class="glass-panel card--padded-lg card--border-bl">
+            <h3 class="text-headline-md" style="margin-bottom:var(--stack-lg);display:flex;align-items:center;gap:12px;">
+              <span class="material-symbols-outlined" style="color:var(--primary-fixed-dim);">science</span>
+              Methodology
+            </h3>
+            <ul style="display:flex;flex-direction:column;gap:var(--stack-lg);">
+              <li style="display:flex;gap:16px;">
+                <div style="width:32px;height:32px;border-radius:50%;background:var(--surface-container-highest);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:4px;">
+                  <span class="material-symbols-outlined" style="font-size:18px;">biotech</span>
+                </div>
+                <div>
+                  <h4 class="text-label" style="margin-bottom:4px;">Research</h4>
+                  <p class="text-body-md text-muted">Use Empathy Maps to uncover user pain points. We do not guess; we research.</p>
+                </div>
+              </li>
+              <li style="display:flex;gap:16px;">
+                <div style="width:32px;height:32px;border-radius:50%;background:var(--surface-container-highest);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:4px;">
+                  <span class="material-symbols-outlined" style="font-size:18px;">draw</span>
+                </div>
+                <div>
+                  <h4 class="text-label" style="margin-bottom:4px;">Wireframing</h4>
+                  <p class="text-body-md text-muted">Low-Fidelity: Focus on hierarchy and flow. Tools: Visily, Balsamiq, or Pen &amp; Paper.</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <div class="golden-rule">
+            <span class="golden-rule__bg material-symbols-outlined" aria-hidden="true">format_paint</span>
+            <h4 class="text-label" style="color:var(--primary-fixed);margin-bottom:var(--stack-md);">Golden Rule</h4>
+            <p class="text-headline-md" style="font-style:italic;">"If it doesn't work in grayscale, color won't fix it."</p>
+          </div>
+        </div>
+
+        <article class="glass-panel card--padded-lg card--border-bl" style="min-height:400px;display:flex;flex-direction:column;align-items:center;">
+          <h3 class="text-headline-md" style="align-self:flex-start;margin-bottom:var(--stack-lg);">The Empathy Map</h3>
+          <div class="empathy-map">
+            <div class="empathy-map__center"><span class="material-symbols-outlined">person</span></div>
+            <span class="empathy-quadrant empathy-quadrant--top">Thinks</span>
+            <span class="empathy-quadrant empathy-quadrant--right">Does</span>
+            <span class="empathy-quadrant empathy-quadrant--bottom">Feels</span>
+            <span class="empathy-quadrant empathy-quadrant--left">Says</span>
+            <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;" viewBox="0 0 100 100" aria-hidden="true">
+              <line x1="50" y1="15" x2="50" y2="85" stroke="rgba(114,121,117,0.2)" stroke-dasharray="2,2"/>
+              <line x1="15" y1="50" x2="85" y2="50" stroke="rgba(114,121,117,0.2)" stroke-dasharray="2,2"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(114,121,117,0.1)"/>
+            </svg>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="top-nav__brand">DecodeLabs</div>
+    <p class="site-footer__meta">Batch: 2026 | Powered by DecodeLabs</p>
+    <nav class="site-footer__links" aria-label="Footer">
+      <a href="#">Technical Docs</a>
+      <a href="#">Mentorship</a>
+      <a href="#">Community</a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

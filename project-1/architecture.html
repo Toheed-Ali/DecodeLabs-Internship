@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs - Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app-shell has-sidebar" data-page="architecture" style="background:var(--background);">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="ambient grid-bg" aria-hidden="true"></div>
+
+  <header class="top-nav">
+    <div class="top-nav__brand">DecodeLabs</div>
+    <div class="top-nav__actions">
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <button class="icon-btn" type="button" aria-label="Account">
+        <span class="material-symbols-outlined">account_circle</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-label="Mobile">
+    <a class="sidebar__link" href="index.html" data-nav="intro">
+      <span class="material-symbols-outlined">door_open</span>
+      Intro
+    </a>
+    <a class="sidebar__link" href="guidelines.html" data-nav="criteria">
+      <span class="material-symbols-outlined">rule</span>
+      Criteria
+    </a>
+    <a class="sidebar__link" href="architecture.html" data-nav="architecture">
+      <span class="material-symbols-outlined filled">architecture</span>
+      Architecture
+    </a>
+    <a class="sidebar__link" href="toolkit.html" data-nav="toolkit">
+      <span class="material-symbols-outlined">handyman</span>
+      Toolkit
+    </a>
+    <a class="sidebar__link" href="aesthetics.html" data-nav="aesthetics">
+      <span class="material-symbols-outlined">palette</span>
+      Aesthetics
+    </a>
+    <a class="sidebar__link" href="framework.html" data-nav="roadmap">
+      <span class="material-symbols-outlined">map</span>
+      Roadmap
+    </a>
+    <a class="sidebar__link" href="conclusion.html" data-nav="conclusion">
+      <span class="material-symbols-outlined">flag</span>
+      Conclusion
+    </a>
+  </nav>
+
+  <aside class="sidebar" aria-label="Section navigation">
+    <div class="sidebar__header">
+      <div class="sidebar__title">Project 1</div>
+      <div class="sidebar__subtitle">Responsive Layout</div>
+    </div>
+    <nav class="sidebar__nav">
+      <a class="sidebar__link" href="index.html" data-nav="intro"><span class="material-symbols-outlined">door_open</span> Intro</a>
+      <a class="sidebar__link" href="guidelines.html" data-nav="criteria"><span class="material-symbols-outlined">rule</span> Criteria</a>
+      <a class="sidebar__link" href="architecture.html" data-nav="architecture"><span class="material-symbols-outlined filled">architecture</span> Architecture</a>
+      <a class="sidebar__link" href="toolkit.html" data-nav="toolkit"><span class="material-symbols-outlined">handyman</span> Toolkit</a>
+      <a class="sidebar__link" href="aesthetics.html" data-nav="aesthetics"><span class="material-symbols-outlined">palette</span> Aesthetics</a>
+      <a class="sidebar__link" href="framework.html" data-nav="roadmap"><span class="material-symbols-outlined">map</span> Roadmap</a>
+      <a class="sidebar__link" href="conclusion.html" data-nav="conclusion"><span class="material-symbols-outlined">flag</span> Conclusion</a>
+    </nav>
+  </aside>
+
+  <main id="main-content" class="main-canvas">
+    <header class="section">
+      <h1 class="text-display" style="margin-bottom:var(--stack-sm);">Project 1: The Responsive Architecture</h1>
+      <p class="text-body-lg text-muted" style="max-width:32rem;">A Strategic Execution Framework for Full-Stack Interns.</p>
+    </header>
+
+    <div class="bento-grid bento-grid--12 section">
+      <article class="col-span-7 card card--border-bl card--padded-lg" style="position:relative;overflow:hidden;">
+        <div class="blueprint-grid" style="position:absolute;inset:0;opacity:0.5;pointer-events:none;"></div>
+        <h2 class="text-headline-md" style="margin-bottom:var(--stack-md);display:flex;align-items:center;gap:8px;position:relative;">
+          <span class="material-symbols-outlined" style="color:var(--tertiary-container);">design_services</span>
+          Wireframe Blueprint
+        </h2>
+        <div class="wireframe-box">
+          <div class="wireframe-nav">Nav: 50px</div>
+          <div class="wireframe-hero">Hero Area — 360px</div>
+          <div class="wireframe-grid">
+            <div class="wireframe-cell"></div>
+            <div class="wireframe-cell"></div>
+            <div class="wireframe-cell"></div>
+          </div>
+          <p class="text-label text-muted" style="text-align:center;margin-top:var(--stack-md);font-family:monospace;">Grid Base: 1060px Max · Margin: 20px</p>
+        </div>
+      </article>
+
+      <article class="col-span-5 card card--border-br card--padded-lg" style="display:flex;flex-direction:column;align-items:center;">
+        <h2 class="text-headline-md" style="margin-bottom:var(--stack-md);">Mobile Execution</h2>
+        <div class="phone-mockup">
+          <div class="phone-mockup__notch" aria-hidden="true"></div>
+          <div class="phone-mockup__content">
+            <span class="material-symbols-outlined" style="font-size:2.5rem;color:var(--tertiary-container);margin-bottom:1rem;">rocket_launch</span>
+            <h3 class="text-headline-md">Build the Future</h3>
+            <div style="width:48px;height:4px;background:var(--tertiary-fixed);border-radius:999px;margin:1rem auto;"></div>
+            <p class="text-body-md text-muted">Responsive from the ground up.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="vision-section section">
+      <h2 class="text-display" style="margin-bottom:var(--stack-md);position:relative;z-index:1;">The Vision: Architecting for the Mobile Web</h2>
+      <p class="text-body-lg text-muted" style="max-width:48rem;margin:0 auto var(--stack-lg);position:relative;z-index:1;">Seamless adaptation across all viewports.</p>
+      <div class="devices-hologram">
+        <div class="device device--desktop">
+          <div class="device__bar"><span class="device__dot"></span><span class="device__dot"></span><span class="device__dot"></span></div>
+          <div class="device__screen"><span class="material-symbols-outlined">desktop_windows</span></div>
+        </div>
+        <div class="device device--tablet">
+          <div class="device__screen"><span class="material-symbols-outlined">tablet_mac</span></div>
+        </div>
+        <div class="device device--mobile">
+          <div class="device__screen"><span class="material-symbols-outlined">smartphone</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pillar-grid section">
+      <article class="pillar-card">
+        <div class="pillar-card__icon"><span class="material-symbols-outlined">explore</span></div>
+        <h3 class="text-headline-md" style="margin-bottom:var(--stack-sm);">Core Goal</h3>
+        <p class="text-body-md text-muted">Construct a digital experience that honors the Mobile-First paradigm.</p>
+      </article>
+      <article class="pillar-card">
+        <div class="pillar-card__icon"><span class="material-symbols-outlined">straighten</span></div>
+        <h3 class="text-headline-md" style="margin-bottom:var(--stack-sm);">Philosophy</h3>
+        <p class="text-body-md text-muted">The web is a dynamic, inclusive information system.</p>
+      </article>
+      <article class="pillar-card">
+        <div class="pillar-card__icon"><span class="material-symbols-outlined">fact_check</span></div>
+        <h3 class="text-headline-md" style="margin-bottom:var(--stack-sm);">Standards</h3>
+        <ul class="dot-list">
+          <li>Semantic Integrity</li>
+          <li>2025 UI/UX Compliance</li>
+          <li>Universal Access</li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="top-nav__brand">DecodeLabs</div>
+    <p class="site-footer__meta">Batch: 2026 | Powered by DecodeLabs</p>
+    <nav class="site-footer__links" aria-label="Footer">
+      <a href="#">Technical Docs</a>
+      <a href="#">Mentorship</a>
+      <a href="#">Community</a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

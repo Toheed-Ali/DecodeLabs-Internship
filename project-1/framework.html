@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Implementation Framework &amp; Roadmap - DecodeLabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="app-shell has-sidebar organic-bg" data-page="roadmap">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="top-nav">
+    <div class="top-nav__brand">DecodeLabs</div>
+    <div class="top-nav__actions">
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <button class="icon-btn" type="button" aria-label="Account">
+        <span class="material-symbols-outlined">account_circle</span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-label="Mobile">
+    <a class="sidebar__link" href="index.html" data-nav="intro">
+      <span class="material-symbols-outlined filled">door_open</span>
+      Intro
+    </a>
+    <a class="sidebar__link" href="guidelines.html" data-nav="criteria">
+      <span class="material-symbols-outlined">rule</span>
+      Criteria
+    </a>
+    <a class="sidebar__link" href="architecture.html" data-nav="architecture">
+      <span class="material-symbols-outlined">architecture</span>
+      Architecture
+    </a>
+    <a class="sidebar__link" href="toolkit.html" data-nav="toolkit">
+      <span class="material-symbols-outlined">handyman</span>
+      Toolkit
+    </a>
+    <a class="sidebar__link" href="aesthetics.html" data-nav="aesthetics">
+      <span class="material-symbols-outlined">palette</span>
+      Aesthetics
+    </a>
+    <a class="sidebar__link" href="framework.html" data-nav="roadmap">
+      <span class="material-symbols-outlined">map</span>
+      Roadmap
+    </a>
+    <a class="sidebar__link" href="conclusion.html" data-nav="conclusion">
+      <span class="material-symbols-outlined">terminal</span>
+      Conclusion
+    </a>
+  </nav>
+
+  <aside class="sidebar" aria-label="Section navigation">
+    <div class="sidebar__header">
+      <div class="sidebar__title">Project 1</div>
+      <div class="sidebar__subtitle">Responsive Layout</div>
+    </div>
+    <nav class="sidebar__nav">
+      <a class="sidebar__link" href="index.html" data-nav="intro"><span class="material-symbols-outlined">door_open</span> Intro</a>
+      <a class="sidebar__link" href="guidelines.html" data-nav="criteria"><span class="material-symbols-outlined">rule</span> Criteria</a>
+      <a class="sidebar__link" href="architecture.html" data-nav="architecture"><span class="material-symbols-outlined">architecture</span> Architecture</a>
+      <a class="sidebar__link" href="toolkit.html" data-nav="toolkit"><span class="material-symbols-outlined">handyman</span> Toolkit</a>
+      <a class="sidebar__link" href="aesthetics.html" data-nav="aesthetics"><span class="material-symbols-outlined">palette</span> Aesthetics</a>
+      <a class="sidebar__link" href="framework.html" data-nav="roadmap"><span class="material-symbols-outlined filled">map</span> Roadmap</a>
+      <a class="sidebar__link" href="conclusion.html" data-nav="conclusion"><span class="material-symbols-outlined">terminal</span> Conclusion</a>
+    </nav>
+  </aside>
+
+  <main id="main-content" class="main-canvas">
+    <header class="section">
+      <h1 class="text-display" style="margin-bottom:var(--stack-md);">Pillar 3: Implementation - The Framework</h1>
+      <p class="text-body-lg text-muted" style="max-width:32rem;">Establishing a robust technical foundation through structured macro layouts, fluid typography, and an iterative execution timeline.</p>
+    </header>
+
+    <div class="bento-grid bento-grid--2 section">
+      <article class="card card--border-bl card--padded-lg" style="position:relative;overflow:hidden;">
+        <div class="blueprint-grid" style="position:absolute;inset:0;opacity:0.5;pointer-events:none;"></div>
+        <div style="position:relative;z-index:1;">
+          <div style="width:48px;height:48px;border-radius:12px;background:var(--surface-container-low);border:1px solid rgba(117,89,69,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--stack-lg);">
+            <span class="material-symbols-outlined">view_quilt</span>
+          </div>
+          <h2 class="text-headline-md" style="margin-bottom:12px;">Layout Blueprint</h2>
+          <h3 class="text-label" style="color:var(--primary);opacity:0.8;margin-bottom:var(--stack-md);">CSS Grid for Macro Layouts</h3>
+          <p class="text-body-md text-muted" style="margin-bottom:var(--stack-lg);">Define the overarching page architecture using CSS Grid — Header, Sidebar, Main Content, and Footer regions.</p>
+          <div class="code-block">
+            .macro-grid {<br>
+            &nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;grid-template-columns: repeat(12, 1fr);<br>
+            &nbsp;&nbsp;gap: 24px;<br>
+            }
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--border-br card--padded-lg" style="position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(201,234,220,0.05));pointer-events:none;"></div>
+        <div style="position:relative;z-index:1;">
+          <div style="width:48px;height:48px;border-radius:12px;background:var(--surface-container-low);border:1px solid rgba(117,89,69,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--stack-lg);">
+            <span class="material-symbols-outlined">flex_wrap</span>
+          </div>
+          <h2 class="text-headline-md" style="margin-bottom:12px;">Component Composition</h2>
+          <h3 class="text-label" style="color:var(--primary);opacity:0.8;margin-bottom:var(--stack-md);">Flexbox for Micro Components</h3>
+          <p class="text-body-md text-muted" style="margin-bottom:var(--stack-lg);">Orchestrate nav bars, toolbars, and button rows with content-aware Flexbox alignment.</p>
+          <div class="code-block">
+            .micro-layout {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            &nbsp;&nbsp;gap: 24px;<br>
+            }
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="strategy-banner">
+      <div class="strategy-banner__bg" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFBAqsHrfSnH0NDfZK_3VJsCuC1JbTl6tGhoANV5oemUCHTIJuvFliJpyjVBHfEXk8n8x8rKHnE26IRudV01n5LNDY7ZNnxChtvTlGISTnkok4KyjADt98wxXQoHTJNx5BvyjBTHBzkis-KhHxFS-gymk_Oh4RC9PcoD3WEtaueXI86GC5s_NFYlhqjtNKFaZq9OmzOgDG4BIWuBQ7-3OVeulcYdXdrS6c_mF06UycU5Q1Fw2T7Mvmy8AkDOC807m5Xz8HKsGdkyMj');"></div>
+      <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:var(--stack-lg);">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.2);width:fit-content;">
+          <span class="material-symbols-outlined" style="font-size:16px;">smartphone</span>
+          <span class="text-label" style="font-size:12px;color:var(--on-primary);">Core Strategy</span>
+        </div>
+        <h2 class="text-headline-lg" style="color:var(--on-primary);">Mobile-First Fluidity</h2>
+        <p class="text-body-md" style="color:var(--primary-fixed-dim);max-width:36rem;">
+          Start with a single column. Use <code style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;">min-width</code> media queries at <strong>768px</strong> (tablet) and <strong>1024px</strong> (desktop). Leverage <code style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;">clamp()</code> for fluid typography.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:var(--stack-lg);padding-bottom:var(--stack-md);border-bottom:1px solid rgba(117,89,69,0.1);">
+        <span class="material-symbols-outlined" style="font-size:2rem;">route</span>
+        <h2 class="text-display" style="font-size:clamp(1.75rem,3vw,2.5rem);">The Execution Roadmap</h2>
+      </div>
+
+      <div class="roadmap-timeline">
+        <div class="roadmap-timeline__line" aria-hidden="true"></div>
+        <ol class="roadmap-steps">
+          <li class="roadmap-step">
+            <div class="roadmap-step__icon"><span class="material-symbols-outlined">search</span></div>
+            <div>
+              <span class="roadmap-step__phase">Phase 1</span>
+              <h3 class="text-headline-md">Discovery</h3>
+              <p class="text-body-md text-muted">Define "How Might We"</p>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <div class="roadmap-step__icon"><span class="material-symbols-outlined">design_services</span></div>
+            <div>
+              <span class="roadmap-step__phase">Phase 2</span>
+              <h3 class="text-headline-md">Wireframe</h3>
+              <p class="text-body-md text-muted">Grayscale, mobile-first design</p>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <div class="roadmap-step__icon"><span class="material-symbols-outlined">data_object</span></div>
+            <div>
+              <span class="roadmap-step__phase">Phase 3</span>
+              <h3 class="text-headline-md">Semantics</h3>
+              <p class="text-body-md text-muted">HTML landmarks layout</p>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <div class="roadmap-step__icon"><span class="material-symbols-outlined">format_paint</span></div>
+            <div>
+              <span class="roadmap-step__phase">Phase 4</span>
+              <h3 class="text-headline-md">Style</h3>
+              <p class="text-body-md text-muted">CSS Grid/Flex + 2025 palette</p>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <div class="roadmap-step__icon"><span class="material-symbols-outlined">account_tree</span></div>
+            <div>
+              <span class="roadmap-step__phase">Phase 5</span>
+              <h3 class="text-headline-md">Logic</h3>
+              <p class="text-body-md text-muted">State &amp; interactivity</p>
+            </div>
+          </li>
+          <li class="roadmap-step is-active">
+            <div class="roadmap-step__icon"><span class="material-symbols-outlined">fact_check</span></div>
+            <div>
+              <span class="roadmap-step__phase">Phase 6</span>
+              <h3 class="text-headline-md" style="color:var(--primary);">Audit</h3>
+              <p class="text-body-md text-muted">LCP, CLS, Accessibility</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="top-nav__brand">DecodeLabs</div>
+    <p class="site-footer__meta">Batch: 2026 | Powered by DecodeLabs</p>
+    <nav class="site-footer__links" aria-label="Footer">
+      <a href="#">Technical Docs</a>
+      <a href="#">Mentorship</a>
+      <a href="#">Community</a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
