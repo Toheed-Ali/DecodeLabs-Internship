@@ -1074,12 +1074,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .roadmap-timeline__line {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 24px;
   left: 0;
   right: 0;
   height: 1px;
   background: rgba(117, 89, 69, 0.2);
-  transform: translateY(-50%);
 }
 
 .roadmap-steps {
